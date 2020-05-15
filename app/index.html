@@ -13,24 +13,28 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 
-  <title>Hello, world!</title>
+  <title>Люмос</title>
 </head>
 
 <body>
+  <!-- header -->
   <header class="header">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="header-information d-flex justify-content-between">
-            <a class="header-logo col-md-2">
-              <img src="img/лого1.png" alt="логотип">
-            </a>
-            <div class="header-info align-self-center col-md-10">
-              <div class="header-name text-left">
-                <h4>БЕСПЛАТНЫЙ ОНЛАЙН-ПРАКТИКУМ АЛОРИИ СОБИНОВОЙ <br>
-              </div>
-            </div>
+        <div class="header-information d-flex justify-content-between col-md-2">
+          <a class="header-logo" href="index.html">
+            <img src="img/лого1.png" alt="логотип">
+          </a>
+        </div>
+        <div class="header-information align-self-center col-md-8">
+          <div class="header-name">
+            <h4>БЕСПЛАТНЫЙ ОНЛАЙН-ПРАКТИКУМ АЛОРИИ СОБИНОВОЙ <br>
+            </h4>
           </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
           <div class="header-description col-md-12">
             <div class="row">
               <div class="header-description-info col-md-12">
@@ -39,11 +43,11 @@
                 <p>На практикуме вы разблокируете свой денежный поток и научитесь подключаться к Эгрегору денег, в
                   результате чего увеличите благосостояние и улучшите качество своей жизни</p>
                 <form class="header-form">
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-lg-5">
-                      <input type="text form-control" class="form-control" placeholder="Введите e-mail">
+                  <div class="row d-flex justify-content-center col-12">
+                    <div class=" col-lg-5 col-xs-6">
+                      <input type="text" class="form-control" placeholder="Введите e-mail">
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-xs-6">
                       <button class="btn btn-red" type="submit">ЗАПИСАТЬСЯ БЕСПЛАТНО</button>
                     </div>
                     <p>Я согласен на обработку моих персональных данных в соответствии с Условиями</p>
@@ -56,24 +60,26 @@
       </div>
     </div>
   </header>
+  <!-- /.header -->
   <main class="main">
+    <!-- questions -->
     <section class="questions">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="question col-lg-12">
-            <h3>ЧТО МЕШАЕТ ВАМ <span>БРАТЬ ОТ ЖИЗНИ БОЛЬШЕ?</span></h3>
+          <div class="question col-lg">
+            <h3 class="text-center">ЧТО МЕШАЕТ ВАМ <span>БРАТЬ ОТ ЖИЗНИ БОЛЬШЕ?</span></h3>
             <div class="row">
-              <div class="question-item col-md-5">
-                <img class="img-fluid" src="img/Group 2.png" alt="">
+              <div class="question-item col-md-5  text-xl-right text-center justify-content-md-around">
+                <img class="img-fluid" src="img/question-img-1.png" alt="">
               </div>
-              <div class="col-md-7 text-left">
+              <div class="question-answers__right col-md-7 text-center text-xl-left">
                 <p class="question-answer">Каждый человек с рождения наделен очень большим и мощным потенциалом
                   финансовой удачи. В идеальной
                   картине удача сопровождает нас во всех начинаниях: при поиске работы, в бизнесе, денежных вложениях,
                   бытовых тратах.
                 </p>
-                <p class="question-answer question-arrow">Но большинство людей этот <span>потенциал неосознанно
-                    блокируют:</span>
+                <p class="question-answer question-arrow">Но большинство людей этот <span>потенциал
+                    неосознанно блокируют:</span>
                   страхами новых
                   начинаний, боязнью
                   потерпеть неудачу, отказом использовать новые возможности, постоянно находясь в зоне комфорта,
@@ -85,12 +91,13 @@
             </div>
           </div>
           <div class="question col-lg-11">
-            <h3>КАК ВЫБРАТЬСЯ из финансового тупика <span>и повысить КАЧЕСТВО СВОЕЙ ЖИЗНИ?</span></h3>
+            <h3 class="text-center">КАК ВЫБРАТЬСЯ из финансового тупика <span>и повысить КАЧЕСТВО СВОЕЙ ЖИЗНИ?</span>
+            </h3>
             <div class="row flex-row-reverse">
-              <div class="question-item question-item__2  col-md-5">
-                <img class="img-fluid" src="img/Frame 3.png" alt="">
+              <div class="question-item question-item__2 col-md-5 text-center text-xl-left">
+                <img class="img-fluid" src="img/question-img-2.png" alt="">
               </div>
-              <div class="col-md-7 text-right question-answers">
+              <div class="col-md-7 text-xl-right text-center question-answers__left">
                 <p class="question-answer">За наш материальный достаток отвечает Эгрегор финансовой удачи и очень важно
                   выстроить с ним канал взаимодействия. В результате чего вы повысите свои внутренние вибрации, уберете
                   страхи и притянете к себе денежные возможности.
@@ -107,22 +114,23 @@
           </div>
         </div>
       </div>
-      </div>
     </section>
+    <!-- questions -->
+    <!-- info -->
     <section class="info text-center">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <p>На практикуме вы с помощью специальной техники
               подключитесь к финансовому потоку удачи, который дан вам при рождении,
-              тем самым активируете его и привлечете новые финансовые возможности
-              ﻿на свою линию жизни</p>
+              тем самым активируете его и привлечете новые финансовые возможности<br>на свою линию жизни</p>
             <p><a href="#" class="btn btn-red btn-record">ЗАПИСАТЬСЯ НА ПРАКТИКУМ</a></p>
           </div>
         </div>
       </div>
     </section>
     <!-- /.info -->
+    <!-- program -->
     <section class="program text-left">
       <div class="container">
         <div class="row justify-content-center">
@@ -153,10 +161,11 @@
       </div>
     </section>
     <!-- /.progrem -->
+    <!-- causes -->
     <section class="causes">
       <div class="container">
         <div class="row causes-info justify-content-around">
-          <h3>ВАМ ОБЯЗАТЕЛЬНО НУЖНО БЫТЬ НА ПРАКТИКУМЕ, ЕСЛИ ВЫ:</h3>
+          <h4 class="text-center">ВАМ ОБЯЗАТЕЛЬНО НУЖНО БЫТЬ НА ПРАКТИКУМЕ, ЕСЛИ ВЫ:</h4>
           <div class="couses-item col-md-4 text-center">
             <p>хотите улучшить свой финансовый статус</p>
           </div>
@@ -175,19 +184,19 @@
           <p class="col-md-12 text-center"><a href="#" class="btn btn-red btn-record">ЗАПИСАТЬСЯ НА ПРАКТИКУМ</a></p>
         </div>
       </div>
-      </div>
     </section>
     <!-- /.causes -->
+    <!-- author -->
     <section class="author">
       <div class="container">
         <div class="author-info">
           <div class="author-information  row justify-content-center">
             <div class="autor-item row justify-content-center">
               <div>
-                <img class="author-photo img-fluid" src="img/Frame 17.png" alt="">
+                <img class="author-photo img-fluid img-circle" src="img/author-img-1.png" alt="">
               </div>
-              <div class="author-description">
-                <h3>Автор практикума Алория Собинова</h3>
+              <div class="author-description justify-content-sm-around">
+                <h3 class="text-center">Автор практикума Алория Собинова</h3>
                 <ul class="author-list">
                   <li>
                     <p>Профессиональный рунолог, мастер Таро, специалист по родологии и астропсихологии, парапсихолог.
@@ -212,15 +221,15 @@
                 </ul>
               </div>
             </div>
-            <div class="author-info row">
+            <div class="author-info text-center row">
               <div class="col-md-4">
-                <img class="author-photo__small img-fluid" src="img/Frame 18.jpg" alt="">
+                <img class="author-photo__small img-fluid" src="img/author-img-2.jpg" alt="">
               </div>
               <div class="col-md-4">
-                <img class="author-photo__small img-fluid" src="img/19.jpg" alt="">
+                <img class="author-photo__small img-fluid" src="img/author-img-3.jpg" alt="">
               </div>
               <div class="col-md-4">
-                <img class="author-photo__small img-fluid" src="img/Frame 20.jpg" alt="">
+                <img class="author-photo__small img-fluid" src="img/author-img-4.jpg" alt="">
               </div>
             </div>
           </div>
@@ -228,8 +237,9 @@
       </div>
     </section>
     <!-- /.author -->
+    <!-- reviews -->
     <section class="reviews">
-      <h3 class="text-center">Какие результаты получают мои ученики:</h3>
+      <h4 class="text-center">Какие результаты получают мои ученики:</h4>
       <div class="container">
         <div class="row justify-content-center">
 
@@ -237,6 +247,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
                     <div class="user-photo"><img src="img/img-comment-1.jpg" alt=""></div>
                     <div class="user-info">
@@ -336,6 +347,7 @@
               </div>
               <div class="carousel-item">
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
                     <div class="user-photo"><img src="img/img-comment-4.jpg" alt=""></div>
                     <div class="user-info">
@@ -381,6 +393,7 @@
                 </div>
 
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
                     <div class="user-photo"><img src="img/img-content-5.jpg" alt=""></div>
                     <div class="user-info">
@@ -408,6 +421,7 @@
               </div>
               <div class="carousel-item">
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
                     <div class="user-photo"><img src="img/img-comment-2.jpg" alt=""></div>
                     <div class="user-info">
@@ -448,6 +462,7 @@
                 </div>
 
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
                     <div class="user-photo"><img src="img/img-comment-3.png" alt=""></div>
                     <div class="user-info">
@@ -465,6 +480,7 @@
                   </div>
                 </div>
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
                     <div class="user-photo"><img src="img/img-comment-7.png" alt=""></div>
                     <div class="user-info">
@@ -486,6 +502,7 @@
                 </div>
 
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
                     <div class="user-photo"><img src="img/img-comment-6.png" alt=""></div>
                     <div class="user-info">
@@ -506,8 +523,9 @@
 
               <div class="carousel-item">
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
-                    <div class="user-photo"><img src="img/img-comment-2.jpg" alt=""></div>
+                    <div class="user-photo"><img src="img/img-comment-2.jpg" alt="фото"></div>
                     <div class="user-info">
                       <p class="user-name">Наталья Горячева</p>
                       <h5>Ритуалы с таро улучшили финансовое положение: практически сразу получила очень большую премию
@@ -546,6 +564,7 @@
                 </div>
 
                 <div class="reviews-wrap">
+                  <img class="reviews-icon img-fluid" src="img/ковычки.svg" alt="ковычки">
                   <div class="reviews-author user d-flex">
                     <div class="user-photo"><img src="img/img-comment-8.jpg" alt=""></div>
                     <div class="user-info">
@@ -560,7 +579,8 @@
                       люди с разными запросами по основным сферам жизни – здоровье, деньги, бизнес, личные отношения,
                       предназначение, вопросы красоты и т.д. Астрология дает ответы на многие вопросы. Но все же я стала
                       искать дополнительные инструменты не только диагностики, но и коррекции, трансформации жизненных
-                      ситуаций и событийного ряда.</p>
+                      ситуаций и событийного ряда.
+                    </p>
                     <p>Так я начала изучать Руны, сначала как любитель, для себя и решения
                       своих жизненных задач. Совершенно случайно я попала на бесплатный вебинар Алории по рунической
                       диагностике негативных воздействий. <span>Алория поразила меня своими знаниями, огромным терпением
@@ -580,7 +600,8 @@
                       обучаясь у Алории.
                     </p>
                     <p>Сейчас я нахожусь всегда в потоке, легко вхожу в альфа-погружение, много энергии и желания
-                      обучаться. <span>Поправляю денежную сферу.</span></p>
+                      обучаться. <span>Поправляю денежную сферу.</span>
+                    </p>
                     <p>Во время практик, я поняла, что у меня просыпается
                       ясновидение. Была этому удивлена, так как всегда полагалась на свою интуицию.</p>
                     <p>Выстроила спокойное
@@ -590,31 +611,28 @@
                   </div>
                 </div>
 
-
               </div>
             </div>
-
           </div>
-
-
-
-
-
-
           <p><a href="#" class="btn btn-red btn-record">ЗАПИСАТЬСЯ НА ПРАКТИКУМ</a></p>
         </div>
+      </div>
     </section>
     <!-- /.reviews -->
+
+
+
+
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="row justify-content-between footer-info">
-        <div class="footer-support support text-left">
+      <div class="footer-info row justify-content-between">
+        <div class="footer-support support text-md-left text-center">
           <h5>Служба поддержки</h5>
-          <p><a class="support-email" href="#">info@aloriya-sobinova.com</a></p>
+          <p><a class=" support-email" href="#">info@aloriya-sobinova.com</a></p>
           <p><button class="support-phone" type="button">Заказать обратный звонок</button></p>
         </div>
-        <div class="footer-partners partners text-right">
+        <div class="footer-partners partners text-md-right text-center">
           <h5>Партнерская программа</h5>
           <div class="partners-info">
             <p>ИП Хохлов Олег Геннадиевич</p>

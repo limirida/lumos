@@ -1,6 +1,7 @@
 @import "vars";
-@import "libs";
+//@import "libs";
 @import "fonts";
+@import "normalize.scss";
 
 body {
     font-family: 'Lato', sans-serif;
@@ -13,10 +14,19 @@ ul {
     list-style: none;
 }
 
+.btn:hover {
+    color: #FFFFFF;
+
+}
+
 .header {
     background: url('../img/header-bg.jpg') no-repeat center;
     background-size: cover;
     color: #E5E5E5;
+}
+
+.header-name {
+    text-align: left;
 }
 
 img {
@@ -92,7 +102,9 @@ h4 {
     border-radius: 35px;
 }
 
+
 .header-description .btn-red {
+    width: 100%;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 15px;
@@ -100,10 +112,6 @@ h4 {
     text-align: center;
     text-transform: uppercase;
     height: 50px;
-    padding-top: 15px;
-    padding-bottom: 17px;
-    padding-left: 35px;
-    padding-right: 35px;
 }
 
 .header-form p {
@@ -149,10 +157,6 @@ h4 {
     top: 40px;
 }
 
-.question:last-child img {
-    padding-left: 30px;
-}
-
 .question:first-child img {
     padding-right: 30px;
 }
@@ -176,7 +180,6 @@ h4 {
     padding-bottom: 82px;
 }
 
-
 /* =====================info================================= */
 .info {
     padding: 80px 0;
@@ -188,6 +191,10 @@ h4 {
 .info p:first-child {
     max-width: 944px;
     margin: 0 auto 40px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
 }
 
 /* =====================program================================= */
@@ -265,7 +272,7 @@ h4 {
     content: '';
     width: 40px;
     height: 40px;
-    background: url(../img/result-1.png) no-repeat center;
+    background: url('../img/result-1.png') no-repeat center;
     background-size: contain;
     top: 5px;
     bottom: 0;
@@ -295,7 +302,10 @@ h4 {
     max-width: 1140px;
 }
 
-.causes-info h3 {
+.causes-info h4 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
     padding-bottom: 60px;
 }
 
@@ -354,11 +364,6 @@ h4 {
     padding-bottom: 30px;
 }
 
-.author-photo {
-    max-width: 458px;
-    max-height: 406px;
-}
-
 .author-photo ul {
     max-width: 628px;
     padding-right: 40px;
@@ -372,7 +377,7 @@ h4 {
     font-weight: bold;
 }
 
-.author-description {
+.author-list {
     padding-left: 75px;
 }
 
@@ -396,18 +401,13 @@ h4 {
     left: -21px;
 }
 
-.author-photo__small {
-    max-width: 360px;
-    max-height: 220px;
-}
-
 /* =====================reviews================================= */
 .reviews {
     background: #F4E4F9;
     padding-top: 102px;
 }
 
-.reviews h3 {
+.reviews h4 {
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
@@ -416,12 +416,6 @@ h4 {
     padding-bottom: 40px;
 }
 
-.reviews-wrap {
-    max-width: 946px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
-    padding-top: 25px;
-}
 
 .user-photo {
     padding: 0 20px;
@@ -440,6 +434,13 @@ h4 {
     background: #714271;
     bottom: 30px;
 }
+
+.reviews-icon {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
 
 .user-name {
     font-weight: bold;
@@ -492,6 +493,8 @@ h4 {
     max-width: 1151px;
 }
 
+
+
 .support h5 {
     font-weight: bold;
     font-size: 18px;
@@ -533,6 +536,62 @@ h4 {
 .partners-info {
     color: #BDC8D9;
 }
+
+.reviews-wrap {
+    position: relative;
+    max-width: 946px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    padding-top: 25px;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.reviews_wrap__img {
+    top: -10px;
+    z-index: 100;
+}
+
+.question-answers__right {
+    position: relative;
+}
+
+.question-answers__right::before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 128px;
+    background: url('../img/arrow.svg') no-repeat center;
+    background-size: contain;
+    background-size: contain;
+    top: 37%;
+    bottom: 0;
+    left: -8px;
+}
+
+.question-answers__left {
+    position: relative;
+}
+
+.question-answers__left::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 128px;
+    background: url('../img/arrow.svg') no-repeat center;
+    background-size: contain;
+    top: 26%;
+    bottom: 0;
+    right: 45px;
+    transform: rotate(180deg);
+}
+
+.info-heading {
+    display: none;
+}
+
 
 
 @import "media";
