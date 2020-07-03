@@ -537,12 +537,18 @@ h4 {
     color: #BDC8D9;
 }
 
+
 .reviews-wrap {
     position: relative;
     max-width: 946px;
     background: #FFFFFF;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
     padding-top: 25px;
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .carousel-inner {
